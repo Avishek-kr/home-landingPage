@@ -1,27 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Slider</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    <title>Esports</title>
-</head>
-<body>
-    <div class="background-container">
-        <!-- <div class="img-container">
-            <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/home.jpg" alt="">
-        </div> -->
-        <div class="navbar">
-            <ul>
-                <li>
-                    <img src="logo-white.png" alt="">
-                </li>
-                <li>
-                    +91 8700263486
-                </li>
-            </ul>
-        </div>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="robots" content="noindex,follow" />
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <div class="navigation-left">
+        <img src="images/black_color.png" alt="">
+      </div>
+      <div class="navigation-right">
+            +91 (870) 026-3486
+      </div>
     </div>
-</body>
+    <div class="vlt-fixed-socials">
+      <a href="https://www.google.com" class="vlt-social-icon vlt-social-icon--style-1" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+      <a class="vlt-social-icon vlt-social-icon--style-1" href="https://twitter.com/Esports4gdotcom/" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a>
+      <a class="vlt-social-icon vlt-social-icon--style-1" href="https://www.instagram.com/esports4g_com/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+      <a class="vlt-social-icon vlt-social-icon--style-1" href="https://www.linkedin.com/company/esports4g-com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <!-- Slider Wrapper -->
+    <div class="css-slider-wrapper">
+      <input type="radio" name="slider" class="slide-radio1" id="slider_1">
+      <input type="radio" name="slider" class="slide-radio2" checked  id="slider_2">
+
+      <!-- Slider Pagination -->
+      <div class="slider-pagination">
+        <label for="slider_1" class="page1"></label>
+        <label for="slider_2" class="page2"></label>
+      </div>
+
+      <!-- Slider #1 -->
+      <div class="slider slide-1">
+        <div class="slider-content">
+          <h4>New Product</h4>
+          <h2>Denim Longline T-Shirt Dress With Split</h2>
+        </div>
+        <!-- <div class="number-pagination">
+          <span>1</span>
+        </div> -->
+      </div>
+
+      <!-- Slider #2 -->
+      <div class="slider slide-2">
+        <div class="slider-content">
+          <h4>New Product</h4>
+          <h2>Denim Longline T-Shirt Dress With Split</h2>
+        </div>
+        <!-- <div class="number-pagination">
+          <span>2</span>
+        </div> -->
+      </div>
+    </div>
+    <div class="website-links">
+      <ul>
+        <li><a href="https://gh.esports4g.com/">Gaming Hardware</a></li>
+        <li><a href="https://esports4g.com/">Digital Gaming</a></li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+
 </html>
